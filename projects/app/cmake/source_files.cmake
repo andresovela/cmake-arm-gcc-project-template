@@ -1,0 +1,24 @@
+set(TEMPLATE_SOURCE_FILES
+    ${TEMPLATE_SOURCE_DIR}/add_one/add_one.c
+    ${TEMPLATE_SOURCE_DIR}/add_two/add_two.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Core/Src/stm32f4xx_it.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Core/Src/stm32f4xx_hal_msp.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/Core/Src/system_stm32f4xx.c
+    ${TEMPLATE_SOURCE_DIR}/stm32/startup_stm32f446xx.s
+)

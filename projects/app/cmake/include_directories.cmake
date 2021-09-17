@@ -1,0 +1,10 @@
+set(TEMPLATE_INCLUDE_DIRECTORIES
+    ${TEMPLATE_SOURCE_DIR}/add_one
+    ${TEMPLATE_SOURCE_DIR}/add_two
+    ${TEMPLATE_SOURCE_DIR}/board
+    ${TEMPLATE_SOURCE_DIR}/stm32/Core/Inc
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Inc
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+    ${TEMPLATE_SOURCE_DIR}/stm32/Drivers/CMSIS/Include
+)
