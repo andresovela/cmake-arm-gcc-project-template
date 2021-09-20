@@ -16,9 +16,8 @@ include(${CMAKE_SOURCE_DIR}/cmake/source_files.cmake)
 # Generally we are only interested in ${APP_INCLUDE_DIRECTORIES} for unit testing
 include(${CMAKE_SOURCE_DIR}/cmake/include_directories.cmake)
 
-add_executable(${TEST_EXECUTABLE_NAME} ${TEST_FILES})
+add_executable(${TEST_EXECUTABLE_NAME} ${TEST_FILES} ${UNITY_SOURCE_FILES})
 
-target_include_directories(${TEST_EXECUTABLE_NAME} PUBLIC ${APP_INCLUDE_DIRECTORIES})
-target_link_libraries(${TEST_EXECUTABLE_NAME} unity)
+target_include_directories(${TEST_EXECUTABLE_NAME} PUBLIC ${APP_INCLUDE_DIRECTORIES} ${UNITY_INCLUDE_DIRECTORIES})
 
 add_test(NAME ${TEST_NAME} COMMAND ${TEST_EXECUTABLE_NAME} WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR})

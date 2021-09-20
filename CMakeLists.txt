@@ -7,8 +7,8 @@ project(template)
 # Variable that holds the directory that holds all the sources for this project
 set(PATH_TO_PROJECT_SOURCES ${CMAKE_SOURCE_DIR}/src)
 
+# CMake project to cross-compile application
 add_subdirectory(src)
-add_subdirectory(tests)
 
-set(UNITY_EXTENSION_FIXTURE ON CACHE BOOL "Compile Unity with the \"fixture\" extension")
-add_subdirectory(external/unity)
+# CMake project to test app modules on the PC
+add_subdirectory(tests)
