@@ -1,0 +1,32 @@
+set(MCU_SOURCE_FILES
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Core/Src/stm32f4xx_it.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Core/Src/stm32f4xx_hal_msp.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/Core/Src/system_stm32f4xx.c
+    ${PATH_TO_PROJECT_SOURCES}/stm32/startup_stm32f446xx.s
+)
+
+set(APP_SOURCE_FILES
+    ${PATH_TO_PROJECT_SOURCES}/add_one/add_one.c
+    ${PATH_TO_PROJECT_SOURCES}/add_two/add_two.c
+)
+
+set(PROJECT_SOURCE_FILES
+    ${MCU_SOURCE_FILES}
+    ${APP_SOURCE_FILES}
+)
