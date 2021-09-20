@@ -10,7 +10,6 @@ include(${CMAKE_SOURCE_DIR}/cmake/toolchains/x86-gcc-toolchain.cmake)
 # Declares some helper variables to compile Unity into every test
 include(${CMAKE_SOURCE_DIR}/cmake/unity.cmake)
 
-enable_testing()
-
 # Add tests below
 add_subdirectory(add_one)
+add_subdirectory(add_two)

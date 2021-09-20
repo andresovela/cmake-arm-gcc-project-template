@@ -11,4 +11,5 @@ set(PATH_TO_PROJECT_SOURCES ${CMAKE_SOURCE_DIR}/src)
 add_subdirectory(src)
 
 # CMake project to test app modules on the PC
+enable_testing()
 add_subdirectory(tests)
