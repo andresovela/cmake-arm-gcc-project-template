@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.17)
 
 # Project name and languages
-project(template_app LANGUAGES C ASM)
+project(${PROJECT_NAME_PREFIX}_app LANGUAGES C ASM)
 
 # Configures CMake to output every compiler command it executes
 set(CMAKE_VERBOSE_MAKEFILE ON)
